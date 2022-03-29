@@ -1,0 +1,27 @@
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for tbl_course
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_course`;
+CREATE TABLE `tbl_course` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `teacher` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `tecnology` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `courseText` text COLLATE utf8_bin,
+  `tvTime` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `currentnums` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=47 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- ----------------------------
+-- Table structure for tbl_ip
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_ip`;
+CREATE TABLE `tbl_ip` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ip` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `id_course` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=46 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;

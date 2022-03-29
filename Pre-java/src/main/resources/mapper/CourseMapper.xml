@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.njit.mapper.CourseMapper">
+
+    <update id="updateById1">
+        update tbl_course set currentnums=#{currentnums} where id=#{id}
+    </update>
+
+</mapper>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.njit.mapper.IpMapper">
+
+    <select id="selectByIdCourse" resultType="com.njit.entity.Ip">
+        select * from tbl_ip where id_course=#{id_course}
+    </select>
+
+    <select id="selectByIpAndId"  resultType="com.njit.entity.Ip">
+        select * from tbl_ip where ip=#{ip} and id_course=#{id_course}
+    </select>
+</mapper>
